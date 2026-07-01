@@ -444,11 +444,8 @@ function Portfolio() {
                     ))}
                   </div>
                   <div className="flex flex-wrap gap-2">
-                    <a href={p.github} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 px-3.5 py-2 rounded-lg glass text-sm font-medium hover:scale-105 transition">
-                      <i className="fa-brands fa-github" /> GitHub
-                    </a>
                     <a href={p.github} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 px-3.5 py-2 rounded-lg gradient-bg text-primary-foreground text-sm font-medium hover:scale-105 transition">
-                      <i className="fa-solid fa-up-right-from-square" /> Live Demo
+                      <i className="fa-brands fa-github" /> GitHub Project
                     </a>
                     <button onClick={() => setModal(originalIdx)} className="inline-flex items-center gap-2 px-3.5 py-2 rounded-lg border border-border text-sm font-medium hover:bg-muted/60 transition">
                       <i className="fa-solid fa-chart-pie" /> Dashboard Preview
