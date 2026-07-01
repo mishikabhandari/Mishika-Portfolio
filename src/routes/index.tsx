@@ -509,7 +509,7 @@ function Portfolio() {
               { icon: "fa-envelope", label: "Email", value: "mishikabhandaris@gmail.com", href: "mailto:mishikabhandaris@gmail.com" },
               { icon: "fa-brands fa-linkedin", label: "LinkedIn", value: "linkedin.com/in/mishikabhandari", href: "https://www.linkedin.com/in/mishikabhandari" },
               { icon: "fa-brands fa-github", label: "GitHub", value: "github.com/mishikabhandari", href: "https://github.com/mishikabhandari" },
-              { icon: "fa-phone", label: "Phone", value: "+91 81788 16100", href: "tel:+918178816100" },
+              { icon: "fa-phone", label: "Phone", value: "+91 817881610", href: "tel:+91817881610" },
               { icon: "fa-location-dot", label: "Location", value: "India", href: "#" },
             ].map((c) => (
               <a key={c.label} href={c.href} target="_blank" rel="noreferrer" className="flex items-center gap-4 p-3 rounded-2xl hover:bg-muted/60 transition-colors">
