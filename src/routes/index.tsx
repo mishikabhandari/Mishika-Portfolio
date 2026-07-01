@@ -4,6 +4,7 @@ import heroImg from "@/assets/hero-data.jpg";
 import projectAmazon from "@/assets/project-amazon.jpg";
 import projectCoffee from "@/assets/project-coffee.jpg";
 import avatarImg from "@/assets/avatar.jpg";
+import resumeAsset from "@/assets/Mishika_Bhandari.pdf.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -291,7 +292,7 @@ function Portfolio() {
               <a href="#projects" className="inline-flex items-center gap-2 px-5 py-3 rounded-xl gradient-bg text-primary-foreground font-semibold shadow-glow hover:scale-[1.03] transition-transform">
                 <i className="fa-solid fa-chart-column" /> View Projects
               </a>
-              <a href="/resume.pdf" download className="inline-flex items-center gap-2 px-5 py-3 rounded-xl glass font-semibold hover:scale-[1.03] transition-transform">
+              <a href={resumeAsset.url} download="Mishika_Bhandari.pdf" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-5 py-3 rounded-xl glass font-semibold hover:scale-[1.03] transition-transform">
                 <i className="fa-solid fa-download" /> Download Resume
               </a>
               <a href="#contact" className="inline-flex items-center gap-2 px-5 py-3 rounded-xl border border-border font-semibold hover:bg-muted/60 transition-colors">
@@ -487,7 +488,7 @@ function Portfolio() {
               ))}
             </div>
           </div>
-          <a href="/resume.pdf" download className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl gradient-bg text-primary-foreground font-semibold shadow-glow hover:scale-[1.03] transition-transform">
+          <a href={resumeAsset.url} download="Mishika_Bhandari.pdf" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl gradient-bg text-primary-foreground font-semibold shadow-glow hover:scale-[1.03] transition-transform">
             <i className="fa-solid fa-file-arrow-down" /> Download Resume
           </a>
         </div>
