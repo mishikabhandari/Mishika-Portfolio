@@ -555,8 +555,8 @@ function Portfolio() {
           <div className="flex items-center gap-3">
             {[
               ["fa-brands fa-github", "https://github.com/mishikabhandari"],
-              ["fa-brands fa-linkedin", "https://linkedin.com"],
-              ["fa-solid fa-envelope", "mailto:mishika@example.com"],
+              ["fa-brands fa-linkedin", "https://www.linkedin.com/in/mishikabhandari"],
+              ["fa-solid fa-envelope", "mailto:mishikabhandaris@gmail.com"],
             ].map(([icon, href]) => (
               <a key={icon} href={href} target="_blank" rel="noreferrer" className="h-10 w-10 grid place-items-center rounded-xl glass hover:scale-110 transition-transform">
                 <i className={icon} />
