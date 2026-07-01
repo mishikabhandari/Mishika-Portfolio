@@ -567,6 +567,17 @@ function Portfolio() {
             <i className="fa-solid fa-arrow-up" /> Back to top
           </a>
         </div>
+        <div className="mx-auto max-w-6xl px-4 sm:px-6 pb-8">
+          <div className="flex flex-wrap items-center justify-center gap-4 text-sm text-muted-foreground">
+            <a href="mailto:mishikabhandaris@gmail.com" className="inline-flex items-center gap-2 hover:text-foreground transition-colors">
+              <i className="fa-solid fa-envelope" /> mishikabhandaris@gmail.com
+            </a>
+            <span className="hidden sm:inline text-border">|</span>
+            <a href="https://www.linkedin.com/in/mishikabhandari" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 hover:text-foreground transition-colors">
+              <i className="fa-brands fa-linkedin" /> www.linkedin.com/in/mishikabhandari
+            </a>
+          </div>
+        </div>
       </footer>
 
       {/* PROJECT MODAL */}
