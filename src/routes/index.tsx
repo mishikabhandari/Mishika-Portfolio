@@ -403,18 +403,28 @@ function Portfolio() {
 
       {/* PROJECTS */}
       <Section id="projects" eyebrow="Projects" title="Selected work">
-        <div className="flex flex-wrap gap-2 mb-8" data-reveal>
-          {categories.map((c) => (
-            <button
-              key={c}
-              onClick={() => setFilter(c)}
-              className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
-                filter === c ? "gradient-bg text-primary-foreground shadow-glow" : "glass hover:scale-105"
-              }`}
-            >
-              {c}
-            </button>
-          ))}
+        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-8" data-reveal>
+          <div className="flex flex-wrap gap-2">
+            {categories.map((c) => (
+              <button
+                key={c}
+                onClick={() => setFilter(c)}
+                className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
+                  filter === c ? "gradient-bg text-primary-foreground shadow-glow" : "glass hover:scale-105"
+                }`}
+              >
+                {c}
+              </button>
+            ))}
+          </div>
+          <a
+            href="https://github.com/mishikabhandari"
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm font-medium hover:scale-105 transition"
+          >
+            <i className="fa-brands fa-github" /> github.com/mishikabhandari
+          </a>
         </div>
         <div className="grid md:grid-cols-2 gap-6">
           {filtered.map((p, idx) => {
