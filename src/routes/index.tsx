@@ -403,18 +403,28 @@ function Portfolio() {
 
       {/* PROJECTS */}
       <Section id="projects" eyebrow="Projects" title="Selected work">
-        <div className="flex flex-wrap gap-2 mb-8" data-reveal>
-          {categories.map((c) => (
-            <button
-              key={c}
-              onClick={() => setFilter(c)}
-              className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
-                filter === c ? "gradient-bg text-primary-foreground shadow-glow" : "glass hover:scale-105"
-              }`}
-            >
-              {c}
-            </button>
-          ))}
+        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-8" data-reveal>
+          <div className="flex flex-wrap gap-2">
+            {categories.map((c) => (
+              <button
+                key={c}
+                onClick={() => setFilter(c)}
+                className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
+                  filter === c ? "gradient-bg text-primary-foreground shadow-glow" : "glass hover:scale-105"
+                }`}
+              >
+                {c}
+              </button>
+            ))}
+          </div>
+          <a
+            href="https://github.com/mishikabhandari"
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm font-medium hover:scale-105 transition"
+          >
+            <i className="fa-brands fa-github" /> github.com/mishikabhandari
+          </a>
         </div>
         <div className="grid md:grid-cols-2 gap-6">
           {filtered.map((p, idx) => {
@@ -434,11 +444,8 @@ function Portfolio() {
                     ))}
                   </div>
                   <div className="flex flex-wrap gap-2">
-                    <a href={p.github} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 px-3.5 py-2 rounded-lg glass text-sm font-medium hover:scale-105 transition">
-                      <i className="fa-brands fa-github" /> GitHub
-                    </a>
                     <a href={p.github} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 px-3.5 py-2 rounded-lg gradient-bg text-primary-foreground text-sm font-medium hover:scale-105 transition">
-                      <i className="fa-solid fa-up-right-from-square" /> Live Demo
+                      <i className="fa-brands fa-github" /> GitHub Project
                     </a>
                     <button onClick={() => setModal(originalIdx)} className="inline-flex items-center gap-2 px-3.5 py-2 rounded-lg border border-border text-sm font-medium hover:bg-muted/60 transition">
                       <i className="fa-solid fa-chart-pie" /> Dashboard Preview
@@ -499,9 +506,10 @@ function Portfolio() {
         <div className="grid md:grid-cols-2 gap-6">
           <div data-reveal className="glass-card rounded-3xl p-7 space-y-4">
             {[
-              { icon: "fa-envelope", label: "Email", value: "mishika@example.com", href: "mailto:mishika@example.com" },
-              { icon: "fa-brands fa-linkedin", label: "LinkedIn", value: "linkedin.com/in/mishika", href: "https://linkedin.com" },
+              { icon: "fa-envelope", label: "Email", value: "mishikabhandaris@gmail.com", href: "mailto:mishikabhandaris@gmail.com" },
+              { icon: "fa-brands fa-linkedin", label: "LinkedIn", value: "linkedin.com/in/mishikabhandari", href: "https://www.linkedin.com/in/mishikabhandari" },
               { icon: "fa-brands fa-github", label: "GitHub", value: "github.com/mishikabhandari", href: "https://github.com/mishikabhandari" },
+              { icon: "fa-phone", label: "Phone", value: "+91 817881610", href: "tel:+91817881610" },
               { icon: "fa-location-dot", label: "Location", value: "India", href: "#" },
             ].map((c) => (
               <a key={c.label} href={c.href} target="_blank" rel="noreferrer" className="flex items-center gap-4 p-3 rounded-2xl hover:bg-muted/60 transition-colors">
@@ -547,8 +555,8 @@ function Portfolio() {
           <div className="flex items-center gap-3">
             {[
               ["fa-brands fa-github", "https://github.com/mishikabhandari"],
-              ["fa-brands fa-linkedin", "https://linkedin.com"],
-              ["fa-solid fa-envelope", "mailto:mishika@example.com"],
+              ["fa-brands fa-linkedin", "https://www.linkedin.com/in/mishikabhandari"],
+              ["fa-solid fa-envelope", "mailto:mishikabhandaris@gmail.com"],
             ].map(([icon, href]) => (
               <a key={icon} href={href} target="_blank" rel="noreferrer" className="h-10 w-10 grid place-items-center rounded-xl glass hover:scale-110 transition-transform">
                 <i className={icon} />
