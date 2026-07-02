@@ -4,7 +4,7 @@ import heroImg from "@/assets/hero-data.jpg";
 import projectAmazon from "@/assets/project-amazon.jpg";
 import projectCoffee from "@/assets/project-coffee.jpg";
 import avatarImg from "@/assets/avatar.jpg";
-import resumeAsset from "@/assets/Mishika_Bhandari.pdf.asset.json";
+import resumeAsset from "@/assets/Mishika Bhandari.pdf.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
